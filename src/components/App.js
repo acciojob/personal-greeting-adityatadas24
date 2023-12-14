@@ -3,7 +3,7 @@ import React,{useState} from "react";
 import './../styles/App.css';
 
 const App = () => {
- const [text, setText]= useState("Hello");
+ const [text, setText]= useState("");
 
  function inputs(e){
   setText(e.target.value)
@@ -15,7 +15,7 @@ const App = () => {
        <form>
         <input onChange={inputs} type="text"/>
        </form>
-       <p>{text}</p>
+       <p>Hello {text}!</p>
     </div>
   )
 }
